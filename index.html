@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Audiowide&family=Kanit:wght@200;300&family=Roboto+Slab:wght@200;400;500;700;800;900&family=Titillium+Web:ital,wght@0,300;0,400;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="list">
+        <ul>
+          <li class="list-item"> <a href="#" class="list-items"> Home</a></li>
+          <li class="list-item"><a href="#" class="list-items">Cordinators</a></li>
+          <li class="list-item"><a href="#" class="list-items">Details</a></li>
+          <li class="list-item"><a href="#" class="list-items">Winners</a></li>
+          <li class="list-item"><a href="#" class="list-items">Faqs</a></li>
+        </ul>
+      </div>
+
+      <div class="list1">
+        <img src="ces2.png" alt="logo here" class="ces-logo" />
+      </div>
+      <div class="list2">
+        <img src="logo3.png" alt="logo here" class="ces-logo" />
+      </div>
+    </div>
+
+    <div class="parent1">
+      <script src="three.r134.min.js"></script>
+      <script src="vanta.waves.min.js"></script>
+    
+        <div class="child1">
+          <h1 data-text="Capture..The..Flag">Capture..The..Flag</h1>
+        </div>
+     
+    </div>
+
+    <script>
+      VANTA.WAVES({
+        el: ".parent1",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        // color: 0x0,
+        color:0x161618,
+        shininess: 41.0,
+        waveHeight: 14.0,
+        waveSpeed: 0.5,
+        zoom: 1.0,
+      });
+    </script>
+  </body>
+</html>
