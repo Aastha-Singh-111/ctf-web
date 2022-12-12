@@ -1,6 +1,6 @@
 
 body{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .parent1{
     display: flex;
@@ -267,7 +267,8 @@ pointer-events: none;
 
 .mobilenav{
     display: inline-block;
-    left:64%;
+    left:70%;
+    width: 40px;
     z-index: 999;
 }
 
@@ -310,11 +311,13 @@ h1{
     display: none;
 }
 
-@media screen and (max-width:830px) {
+@media screen and (max-width:860px) {
 
     .mobilenav{
         display: inline-block;
-        left:59%;
+        
+        left:67%;
+        /* right: 60%; */
     }
     .list1{
         left:5%
@@ -335,11 +338,11 @@ h1{
     }
 }
 
-    @media screen and (max-width:708px) {
+    @media screen and (max-width:785px) {
   
         .mobilenav{
             display: inline-block;
-            left:51%;
+            left:60%;
         }
         .list1{
             left:5%
@@ -360,11 +363,11 @@ h1{
         }
     }
 
-        @media screen and (max-width:572px) {
+        @media screen and (max-width:655px) {
      
             .mobilenav{
                 display: inline-block;
-                left:44%;
+                left:62%;
             }
             .list1{
                 width: 65px;
@@ -388,11 +391,11 @@ h1{
                    transform: scale(0.65,0.9);
             }
         }
-            @media screen and (max-width:460px) {
+            @media screen and (max-width:545px) {
         
                 .mobilenav{
                     display: inline-block;
-                    left:32%;
+                    left:57%;
                 }
                 .list1{
                     left:2%
@@ -417,11 +420,11 @@ h1{
                 } */
             }
 
-                @media screen and (max-width:380px) {
+                @media screen and (max-width:475px) {
         
                     .mobilenav{
                         display: inline-block;
-                        left:20%;
+                        left:50%;
                     }
                     .list1{
                         left:2%
@@ -441,12 +444,66 @@ h1{
                            transform: scale(0.4,0.7);
                     }
                 }
-                    @media screen and (max-width:325px) {
+                    @media screen and (max-width:410px) {
                    
         
                         .mobilenav{
                             display: inline-block;
-                            left:30%;
+                            left:55%;
+                        }
+                        .list1{
+                            left:4%;
+                            width: 50px;
+                        
+                        }
+                        .list2{
+                            left:5%;
+                            width: 50px;
+                        }
+                        .list-items{
+                            font-size: 14px;
+                        
+                        }
+                        
+                        h1{
+                               font-weight: 800;
+                               font-size: 70px;
+                               transform: scale(0.3,0.5);
+                        }
+                    }
+                    @media screen and (max-width:350px) {
+                   
+        
+                        .mobilenav{
+                            display: inline-block;
+                            left:45%;
+                        }
+                        .list1{
+                            left:4%;
+                            width: 50px;
+                        
+                        }
+                        .list2{
+                            left:5%;
+                            width: 50px;
+                        }
+                        .list-items{
+                            font-size: 14px;
+                        
+                        }
+                        
+                        h1{
+                               font-weight: 800;
+                               font-size: 70px;
+                               transform: scale(0.3,0.5);
+                        }
+                    }
+                    @media screen and (max-width:295px) {
+                   
+        
+                        .mobilenav{
+                            display: inline-block;
+                            left:38%;
                         }
                         .list1{
                             left:4%;
