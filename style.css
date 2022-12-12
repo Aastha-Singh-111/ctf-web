@@ -1,0 +1,460 @@
+.parent1{
+    display: flex;
+    width: 100%;
+    height:100vh;
+   justify-content: center;
+    align-items: center;
+    margin: -50px 0px 0px 0px;
+    
+}
+h1{
+    font-size:90px;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Audiowide', cursive;
+    /* font-family: 'Kanit', sans-serif; */
+    /* font-family: 'Roboto Slab', serif; */
+    /* font-family: 'Titillium Web', sans-serif; */
+    transform: scale(1.4, 1.4);
+    letter-spacing: 1px;    
+    font-weight: 1500;
+    height: auto;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.581);
+    color: transparent;
+    }
+
+.child1{
+    width: 80%;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+    .nav{
+        z-index: 1;
+        height: 40px;
+        width:100%;
+        display:inline-block;
+        position: relative;
+     
+    }
+    .list{
+        height: 40px;
+        width: 590px;
+        position:absolute;
+        display: inline-block;
+        background-color: rgba(0, 0, 255, 0);
+        left: 55%;
+  
+        
+
+    }
+    .list1{
+        height: 40px;
+        width: 100px;
+        position: relative;
+        display: inline-block;
+        background-color: rgba(165, 42, 42, 0);
+        left: 8%;
+       
+    }
+    .list2{
+        height: 40px;
+        width: 100px;
+        position: relative;
+        display: inline-block;
+        background-color: rgba(165, 42, 42, 0);
+        left:6%
+    }
+
+    .ces-logo{
+        height:40px;
+        width: auto;
+        display: inline-block;
+      
+    }
+    ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+    }
+.list-item{
+    display: inline-block;
+}
+.list-items
+{
+    display: inline-block;
+    letter-spacing: 1px;
+    height: 22px;
+    width: max-content;
+    padding: 10px 20px;
+    justify-content:center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    transition: all 0.8s ease;
+    /* border: 2px solid red; */
+      
+}
+
+.list-items:hover{
+    color: red;
+
+}
+
+h1::before{
+    content: attr(data-text);
+     position:absolute;
+top:0;
+left:0;
+width:0;
+height:100%;   
+
+background: url(13.png);
+background-size: contain;
+background-position: top;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.581);
+border-right: 2px solid rgb(34, 255, 218);
+overflow: hidden;
+animation: animate 6s linear infinite;
+
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%,80%{
+        width: 100%;
+    }
+}
+
+.mobilenav{
+    /* border: 2px solid red; */
+    position: relative;
+    display: inline-block;   
+    height: 35px;
+    width: 40px;
+    box-sizing: border-box;
+    /* padding: 12px 10px 10px 12px; */
+    /* text-align: center; */
+    /* justify-items: center; */
+    /* justify-content:center; */
+    align-items: center;
+    padding: 2px 4px;
+    background-color: white;
+    border-radius: 25%;
+    display: none;
+    cursor:pointer;
+
+}
+.mobilenav ion-icon[name="close-circle"]{
+    display: none;
+}
+@media screen and (max-width:1315px) {
+    .list{
+        left:48%
+    }
+    .list1{
+        left:6%
+
+    }
+    .list2{
+        left:4%
+    }
+    .list-items{
+        font-size: 18px;
+
+    }
+
+  h1{
+           font-weight: 800;
+           font-size: 90px;
+           transform: scale(1.3, 1.4);
+    }
+}
+
+
+@media screen and (max-width:1215px) {
+    .list{
+        left:44%
+    }
+    .list1{
+        left:6%
+
+    }
+    .list2{
+        left:4%
+    }
+    .list-items{
+        font-size: 16px;
+
+    }
+
+  h1{
+           font-weight: 800;
+           font-size: 90px;
+           transform: scale(1.2,1.3);
+    }
+
+
+}
+
+@media screen and (max-width:1145px) {
+    .list{
+        left:41%
+    }
+    .list1{
+        left:6%
+
+    }
+    .list2{
+        left:4%
+    }
+    .list-items{
+        font-size: 14px;
+
+    }
+
+  h1{
+           font-weight: 800;
+           font-size: 90px;
+           transform: scale(1.1,1.4);
+    }
+
+
+}
+@media screen and (max-width:980px) {
+.list{
+    /* display: none; */
+    width: 100%;
+    height: 25vh;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left:0;
+    /* z-index: 90; */
+    display: flex;
+   justify-content: center;
+   align-items: center;
+transform: translateX(100%);
+transition: all 0.5s linear;
+opacity: 0;
+visibility: hiiden;
+pointer-events: none;
+
+}
+
+.list-item{
+    display: block;
+}
+.list-items{
+    display: block;
+    height: 13px;
+}
+
+.mobilenav{
+    display: inline-block;
+    left:64%;
+    z-index: 999;
+}
+
+.mobilenav:hover{
+    color: rgb(80, 232, 232);
+}
+.list1{
+    left:6%
+
+}
+.list2{
+    left:4%
+}
+.list-items{
+    font-size: 14px;
+
+}
+
+h1{
+       font-weight: 800;
+       font-size: 70px;
+       transform: scale(1.2,1.4);
+}
+}
+
+
+.active .list{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+}
+
+.active .mobilenav ion-icon[name="close-circle"]{
+    display: block;
+} 
+
+.active .mobilenav ion-icon[name="menu-outline"]{
+    display: none;
+}
+
+@media screen and (max-width:830px) {
+
+    .mobilenav{
+        display: inline-block;
+        left:59%;
+    }
+    .list1{
+        left:5%
+    
+    }
+    .list2{
+        left:3%
+    }
+    .list-items{
+        font-size: 14px;
+    
+    }
+    
+    h1{
+           font-weight: 800;
+           font-size: 70px;
+           transform: scale(1,1.3);
+    }
+}
+
+    @media screen and (max-width:708px) {
+  
+        .mobilenav{
+            display: inline-block;
+            left:51%;
+        }
+        .list1{
+            left:5%
+        
+        }
+        .list2{
+            left:3%
+        }
+        .list-items{
+            font-size: 14px;
+        
+        }
+        
+        h1{
+               font-weight: 800;
+               font-size: 70px;
+               transform: scale(0.8,1);
+        }
+    }
+
+        @media screen and (max-width:572px) {
+     
+            .mobilenav{
+                display: inline-block;
+                left:44%;
+            }
+            .list1{
+                left:5%
+            
+            }
+            .list2{
+                left:3%
+            }
+            .list-items{
+                font-size: 14px;
+            
+            }
+            
+            h1{
+                   font-weight: 800;
+                   font-size: 70px;
+                   transform: scale(0.65,0.9);
+            }
+        }
+            @media screen and (max-width:460px) {
+        
+                .mobilenav{
+                    display: inline-block;
+                    left:32%;
+                }
+                .list1{
+                    left:4%
+                
+                }
+                .list2{
+                    left:2%
+                }
+                .list-items{
+                    font-size: 14px;
+                
+                }
+                
+                h1{
+                       font-weight: 800;
+                       font-size: 70px;
+                       transform: scale(0.5,0.8);
+                }
+            }
+
+                @media screen and (max-width:380px) {
+        
+                    .mobilenav{
+                        display: inline-block;
+                        left:20%;
+                    }
+                    .list1{
+                        left:2%
+                    
+                    }
+                    .list2{
+                        left:1%
+                    }
+                    .list-items{
+                        font-size: 14px;
+                    
+                    }
+                    
+                    h1{
+                           font-weight: 800;
+                           font-size: 70px;
+                           transform: scale(0.4,0.7);
+                    }
+                }
+                    @media screen and (max-width:325px) {
+                   
+        
+                        .mobilenav{
+                            display: inline-block;
+                            left:30%;
+                        }
+                        .list1{
+                            left:2%;
+                            width: 50px;
+                        
+                        }
+                        .list2{
+                            left:1%;
+                            width: 50px;
+                        }
+                        .list-items{
+                            font-size: 14px;
+                        
+                        }
+                        
+                        h1{
+                               font-weight: 800;
+                               font-size: 70px;
+                               transform: scale(0.3,0.5);
+                        }
+                    }
+
+
